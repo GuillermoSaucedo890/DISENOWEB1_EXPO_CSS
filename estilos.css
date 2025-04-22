@@ -1,0 +1,71 @@
+/* Variables CSS */
+:root {
+  --principal: #FE5E5E;
+  --secundario: #FEB34B;
+  --fondo: #D4EFFF;
+  --texto: #2C3E50;
+  --caja: #FFFFFF;
+  --sombra: rgba(0, 0, 0, 0.15);
+  --hover: #2980B9;
+}
+
+/* Estilos globales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(90deg, var(--principal), var(--secundario));
+  color: white;
+  text-align: center;
+  padding: 32px 16px auto;
+  box-shadow: 0 4px 10px var(--sombra);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.subtitulo {
+  font-style: italic;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Cajas de contenido */
+.caja {
+  background-color: var(--caja);
+  margin: 32px auto;
+  padding: 32px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--sombra);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.caja:hover {
+  transform: TranslateY(-5px);
+  box-shadow: 0 8px 20px var(--sombra);
+}
+
+img {
+  border-radius: 10px;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 24px;
+  background-color: var(--principal);
+  color: white;
+  font-size: 16px;
+  margin-top: 48px;
+}
+
